@@ -49,7 +49,7 @@ Check `training.py` and `training.sh` for re-produce our work.
 More details about how to fine-tune LLaMA can refer to [Finetune_LLAMA](https://github.com/chaoyi-wu/Finetune_LLAMA)
 
 ## Results:
-
+----
 | Setting          | Method           | USMLE(OOD) | MedMCQA(ID) | PubMedQA(ID) |
 | ---------------- | ---------------- | ---------- | ----------- | ------------ |
 | Manual           | Human (pass)     | 50.0       | --          | 60.0         |
@@ -65,9 +65,13 @@ More details about how to fine-tune LLaMA can refer to [Finetune_LLAMA](https://
 | Few-shot         | LLaMA-7B         | 35.66      | --          | --           |
 |                  | PMC-LLaMA-7B     | **40.61**  | --          | --           |
 
-<img width="350" height="500" src="https://github.com/chaoyi-wu/Check_PMC_QA/blob/main/figures/Sample1.png"/>
+## Downstream Training Curve:
+----
+<img width="350" height="500" src="https://github.com/chaoyi-wu/PMC-LLaMA/blob/main/figures/training_curve.png"/>
 
-<img width="350" height="500" src="https://github.com/chaoyi-wu/Check_PMC_QA/blob/main/figures/Sample1.png"/>
+## Zero-shot Cases:
+----
+<img width="350" height="500" src="https://github.com/chaoyi-wu/PMC-LLaMA/blob/main/figures/zero-shot_cases.png"/>
 
 ## Acknowledge
 ----
