@@ -6,7 +6,6 @@ The official codes for "PMC-LLaMA: Continue Training LLaMA on Medical Papers"
 [**Arxiv Version**]()
 
 ## Introduction:
-----
 We continue pre-training LLaMA on 4.8M PubmedCentral papers.
 
 ## Environment:
@@ -17,7 +16,6 @@ pip install transformers,sentencepiece,datasets
 ```
 
 ## Quick Start:
-----
 Check `simple_test.py` for quickly use PMC-LLaMA or you can follow this folowing simple sample.
 
 ```
@@ -37,19 +35,16 @@ with torch.no_grad():
 ```
 
 ## Data:
-----
 The raw training data can be dowloaded from [S2ORC](https://github.com/allenai/s2orc), filter out the papers with PubmedCentral IDs, and you can get the training data we use. 
 
 We will also release a version of training data soon.
 
 ## Pre-training:
-----
 Check `training.py` and `training.sh` for re-produce our work. 
 
 More details about how to fine-tune LLaMA can refer to [Finetune_LLAMA](https://github.com/chaoyi-wu/Finetune_LLAMA)
 
 ## Results:
-----
 | Setting          | Method           | USMLE(OOD) | MedMCQA(ID) | PubMedQA(ID) |
 | ---------------- | ---------------- | ---------- | ----------- | ------------ |
 | Manual           | Human (pass)     | 50.0       | --          | 60.0         |
@@ -66,15 +61,12 @@ More details about how to fine-tune LLaMA can refer to [Finetune_LLAMA](https://
 |                  | PMC-LLaMA-7B     | **40.61**  | --          | --           |
 
 ## Downstream Training Curve:
-----
 <img width="350" height="500" src="https://github.com/chaoyi-wu/PMC-LLaMA/blob/main/figures/training_curve.png"/>
 
 ## Zero-shot Cases:
-----
 <img width="350" height="500" src="https://github.com/chaoyi-wu/PMC-LLaMA/blob/main/figures/zero-shot_cases.png"/>
 
 ## Acknowledge
-----
 Minimal LLaMA -- https://github.com/zphang/minimal-llama
 
 alpaca -- https://github.com/tatsu-lab/stanford_alpaca
@@ -84,6 +76,5 @@ LMFLow -- https://github.com/OptimalScale/LMFlow/tree/main/src/lmflow
 LLaMA: Open and Efficient Foundation Language Models -- https://arxiv.org/abs/2302.13971
 
 ## Contact
-----
 If you have any question, please feel free to contact wtzxxxwcy02@sjtu.edu.cn.
 
