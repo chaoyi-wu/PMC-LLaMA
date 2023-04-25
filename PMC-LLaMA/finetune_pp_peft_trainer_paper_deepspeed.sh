@@ -1,0 +1,22 @@
+torchrun --nproc_per_node=8 finetune_pp_peft_trainer_paper_deepspeed.py \
+    --model_path /Path/to/LLaMA/Model \
+    --Dataset_path ./Data_sample/PMC_OA_papers/Tokenized/\
+    --bf16 True \
+    --output_dir ./Fine_Tuning_Results/Paper_7B \
+    --num_train_epochs 30 \
+    --per_device_train_batch_size 4 \
+    --per_device_eval_batch_size 4 \
+    --gradient_accumulation_steps 4 \
+    --evaluation_strategy "steps" \
+    --eval_steps 2000 \
+    --save_strategy "steps" \
+    --save_steps 200 \
+    --save_total_limit 2 \
+    --learning_rate 2e-5 \
+    --weight_decay 0. \
+    --warmup_ratio 0.03 \
+    --lr_scheduler_type "cosine" \
+    --fsdp "full_shard auto_wrap" \
+    --fsdp_transformer_layer_cls_to_wrap 'LlamaDecoderLayer' \
+    --logging_steps 1 \
+    --tf32 True 
