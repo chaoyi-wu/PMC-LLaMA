@@ -53,10 +53,10 @@ More details about how to fine-tune LLaMA can refer to [Finetune_LLAMA](https://
 | ChatGPT             | Zero-shot*          | 57.0            | 44.7         | 63.9           |
 | LLaMA-7B            | Zero-shot*          | 27.1            | 24.3         | 5.2             |
 | LLaMA-33B           | Zero-shot*          | 43.4            | 30.3         | 1.8             |
-| LLaMA-7B$_{\text{Full}}$  | Full fine-tuning   | 44.55/35.66     | 48.15        | 73.41          |
-| PMC-LLaMA-7B$_{\text{Full}}$ | Full fine-tuning | 44.70/40.61     | 50.54        | 69.53          |
-| LLaMA-7B$_{\text{PEFT}}$   | PEFT               | 29.38/27.34     | 32.37        | 65.81          |
-| PMC-LLaMA-7B$_{\text{PEFT}}$ | PEFT             | 30.64/28.52     | 34.33        | 68.23          |
+| LLaMA-7B-Full  | Full fine-tuning   | 44.55/35.66     | 48.15        | 73.41          |
+| PMC-LLaMA-7B-Full | Full fine-tuning | 44.70/40.61     | 50.54        | 69.53          |
+| LLaMA-7B-PEFT  | PEFT               | 29.38/27.34     | 32.37        | 65.81          |
+| PMC-LLaMA-7B$-PEFT | PEFT             | 30.64/28.52     | 34.33        | 68.23          |
 
 ## Downstream Training Curve:
 <img src="https://github.com/chaoyi-wu/PMC-LLaMA/blob/main/figures/training_curve.png"/>
