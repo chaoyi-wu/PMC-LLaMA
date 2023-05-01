@@ -3,7 +3,7 @@ The official codes for "PMC-LLaMA: Continue Training LLaMA on Medical Papers"
 
 [**Huggingface**](https://huggingface.co/chaoyi-wu/PMC_LLAMA_7B) 
 
-[**Arxiv Version**]()
+[**Arxiv Version**](https://arxiv.org/abs/2304.14454)
 
 ## Introduction:
 We continue pre-training LLaMA on 4.8M PubmedCentral papers.
