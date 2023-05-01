@@ -45,20 +45,18 @@ Check `training.py` and `training.sh` for re-produce our work.
 More details about how to fine-tune LLaMA can refer to [Finetune_LLAMA](https://github.com/chaoyi-wu/Finetune_LLAMA)
 
 ## Results:
-| Setting          | Method           | USMLE(OOD) | MedMCQA(ID) | PubMedQA(ID) |
-| ---------------- | ---------------- | ---------- | ----------- | ------------ |
-| Manual           | Human (pass)     | 50.0       | --          | 60.0         |
-|                  | Human (expert)   | 87.0       | 90.0        | 78.0         |
-| Zero-shot        | InstructGPT-175B | 46.0       | 44.0        | 73.2         |
-|                  | ChatGPT          | 57.0       | 44.7        | 63.9         |
-|                  | LLaMA-7B         | 27.1       | 24.3        | 5.2          |
-|                  | LLaMA-33B        | 43.4       | 30.3        | 1.8          |
-| Full fine-tuning | LLaMA-7B         | 44.55      | 48.15       | **73.41**    |
-|                  | PMC-LLaMA-7B     | **44.70**  | **50.54**   | 69.53        |
-| PEFT             | LLaMA-7B         | 29.38      | 32.37       | 65.81        |
-|                  | PMC-LLaMA-7B     | **30.64**  | **34.33**   | **68.23**    |
-| Few-shot         | LLaMA-7B         | 35.66      | --          | --           |
-|                  | PMC-LLaMA-7B     | **40.61**  | --          | --           |
+| Method              | Setting             | USMLE(OOD/ID) | MedMCQA(ID) | PubMedQA(ID) |
+|---------------------|---------------------|------------------|--------------|------------------|
+| Human (pass)        | Manual*             | 50.0            | --            | 60.0           |
+| Human (expert)      | Manual*             | 87.0            | 90.0         | 78.0           |
+| InstructGPT-175B    | Zero-shot*          | 46.0            | 44.0         | 73.2           |
+| ChatGPT             | Zero-shot*          | 57.0            | 44.7         | 63.9           |
+| LLaMA-7B            | Zero-shot*          | 27.1            | 24.3         | 5.2             |
+| LLaMA-33B           | Zero-shot*          | 43.4            | 30.3         | 1.8             |
+| LLaMA-7B$_{\text{Full}}$  | Full fine-tuning   | 44.55/35.66     | 48.15        | 73.41          |
+| PMC-LLaMA-7B$_{\text{Full}}$ | Full fine-tuning | 44.70/40.61     | 50.54        | 69.53          |
+| LLaMA-7B$_{\text{PEFT}}$   | PEFT               | 29.38/27.34     | 32.37        | 65.81          |
+| PMC-LLaMA-7B$_{\text{PEFT}}$ | PEFT             | 30.64/28.52     | 34.33        | 68.23          |
 
 ## Downstream Training Curve:
 <img src="https://github.com/chaoyi-wu/PMC-LLaMA/blob/main/figures/training_curve.png"/>
