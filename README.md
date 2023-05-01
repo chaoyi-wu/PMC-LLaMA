@@ -57,6 +57,7 @@ More details about how to fine-tune LLaMA can refer to [Finetune_LLAMA](https://
 | PMC-LLaMA-7B-Full | Full fine-tuning | 44.70/40.61     | 50.54        | 69.53          |
 | LLaMA-7B-PEFT  | PEFT               | 29.38/27.34     | 32.37        | 65.81          |
 | PMC-LLaMA-7B$-PEFT | PEFT             | 30.64/28.52     | 34.33        | 68.23          |
+
 Note that, the manual and zero-shot results with * are referred from [LMFLow](https://github.com/OptimalScale/LMFlow/tree/main/src/lmflow).
 
 ## Downstream Training Curve:
