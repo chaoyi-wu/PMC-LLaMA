@@ -1,7 +1,7 @@
 # PMC-LLaMA
 The official codes for "PMC-LLaMA: Continue Training LLaMA on Medical Papers"
 
-[**Huggingface**](https://huggingface.co/chaoyi-wu/PMC_LLAMA_7B) 
+[**Hugging Face**](https://huggingface.co/chaoyi-wu/PMC_LLAMA_7B) 
 
 [**Arxiv Version**](https://arxiv.org/abs/2304.14454)
 
