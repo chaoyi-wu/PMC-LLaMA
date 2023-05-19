@@ -64,6 +64,8 @@ Note that, the manual and zero-shot results with * are referred from [LMFLow](ht
 <img src="https://github.com/chaoyi-wu/PMC-LLaMA/blob/main/figures/training_curve.png"/>
 
 ## Zero-shot Cases:
+Note that, due to train on the papers, PMC-LLaMA may produce some citations numbers in generation and we dismiss them in the cases to show the main content.
+
 <img src="https://github.com/chaoyi-wu/PMC-LLaMA/blob/main/figures/zero-shot_cases.png"/>
 
 ## Acknowledge
