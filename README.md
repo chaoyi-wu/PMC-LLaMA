@@ -6,7 +6,7 @@ The official codes for "PMC-LLaMA: Continue Training LLaMA on Medical Papers"
 [**Arxiv Version**](https://arxiv.org/abs/2304.14454)
 
 ## Latest News:
-We have release a new model **MedLLaMA-13B** finetuned with LLaMA-13B on some medical corpus, termed as [**MedLLaMA-13B**](https://huggingface.co/chaoyi-wu/MedLLaMA_13B/blob/main/README.md). It have been proved to be more powerful than both LLaMA-13B and PMC-LLaMa, refering to our benchmark for detail comparison:
+We have release a new model **MedLLaMA-13B** finetuned with LLaMA-13B on some medical corpus, termed as [**MedLLaMA-13B**](https://huggingface.co/chaoyi-wu/MedLLaMA_13B/blob/main/README.md). It have been proved to be more powerful than both LLaMA-13B and PMC-LLaMA, refering to our benchmark for detail comparison:
 
 Similarly it can be easily loaded with:
 ```
