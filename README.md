@@ -1,5 +1,6 @@
 # PMC-LLaMA
-The official codes for "PMC-LLaMA: Continue Training LLaMA on Medical Papers". Our model is similar to LLaMA that has not been instruction-tuned. Thus we advise users to do down-stream fine-tuning on it instead of zero-shot testing.
+The official codes for "PMC-LLaMA: Continue Training LLaMA on Medical Papers". 
+Our model is similar to LLaMA that has not been instruction-tuned. Thus we advise users to do down-stream fine-tuning on it instead of zero-shot testing.
 
 [**Huggingface**](https://huggingface.co/chaoyi-wu/PMC_LLAMA_7B) 
 
