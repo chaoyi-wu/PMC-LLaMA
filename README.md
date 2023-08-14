@@ -68,8 +68,8 @@ More details about how to fine-tune LLaMA can refer to [Finetune_LLAMA](https://
 | LLaMA-33B           | Zero-shot*          | 43.4            | 30.3         | 1.8             |
 | LLaMA-7B-Full  | Full fine-tuning   | 44.55/35.66     | 48.15        | 73.4          |
 | PMC-LLaMA-7B-Full | Full fine-tuning | 44.70/40.61     | 50.54        | 69.5          |
-| LLaMA-13B-Full  | Full fine-tuning   | 45.48/39.36     | 51.42        | 77.2          |
-| MedLLaMA-13B-Full | Full fine-tuning | **48.15/43.52**     | **54.15**        | **77.7**          |
+| LLaMA-13B-Full  | Full fine-tuning   | 45.48/39.36     | 51.42        | 76.4          |
+| MedLLaMA-13B-Full | Full fine-tuning | **48.15/43.52**     | **54.15**        | **77.1**          |
 | LLaMA-7B-PEFT  | PEFT               | 29.38/27.34     | 32.37        | 65.8          |
 | PMC-LLaMA-7B$-PEFT | PEFT             | 30.64/28.52     | 34.33        | 68.2          |
 | LLaMA-13B-PEFT  | PEFT               | 38.73/38.73     | 39.56        | 65.4          |
