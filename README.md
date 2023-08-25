@@ -1,6 +1,6 @@
 # PMC-LLaMA
 
-The official codes for "PMC-LLaMA: Further Finetuning LLaMA on Medical Papers". 
+The official codes for "PMC-LLaMA: Towards Building Open-source Language Models for Medicine". 
 
 Our model is similar to LLaMA that has not been instruction-tuned. Thus we advise users to do down-stream fine-tuning on it instead of zero-shot testing.
 
