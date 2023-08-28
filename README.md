@@ -4,7 +4,7 @@ The official codes for "PMC-LLaMA: Towards Building Open-source Language Models 
 
 Our model is similar to LLaMA that has not been instruction-tuned. Thus we advise users to do down-stream fine-tuning on it instead of zero-shot testing.
 
-[**Huggingface**](https://huggingface.co/chaoyi-wu/PMC_LLAMA_7B) 
+[**Hugging Face**](https://huggingface.co/chaoyi-wu/PMC_LLAMA_7B) 
 
 [**Arxiv Version**](https://arxiv.org/abs/2304.14454)
 
