@@ -2,28 +2,35 @@
 
 The official codes for "PMC-LLaMA: Towards Building Open-source Language Models for Medicine". 
 
-Our model is similar to LLaMA that has not been instruction-tuned. Thus we advise users to do down-stream fine-tuning on it instead of zero-shot testing.
-
-[**Hugging Face**](https://huggingface.co/chaoyi-wu/PMC_LLAMA_7B) 
-
 [**Arxiv Version**](https://arxiv.org/abs/2304.14454)
 
+
+Our model is initialized with LLaMA and then tuned with instructions following dataset.
+[MedLLaMA_13B](https://huggingface.co/chaoyi-wu/MedLLaMA_13B) is pretrained on medical corpus, and [PMC_LLaMA_13B](https://huggingface.co/axiong/PMC_LLaMA_13B) is further finetuned based on that.
+
+
+
 ## Latest News:
-We have release a new model **MedLLaMA-13B** finetuned with LLaMA-13B on some medical corpus, termed as [**MedLLaMA-13B**](https://huggingface.co/chaoyi-wu/MedLLaMA_13B/blob/main/README.md). It has been proved to be more powerful than both LLaMA-13B and PMC-LLaMA, refering to our benchmark for more detail comparisons:
+
+We have release a new model **PMC_LLaMA_13B** finetuned on our instruction following dataset.
+It has shown better ability on following user instruction than MedLLaMA_13B.
 
 Similarly it can be easily loaded with:
-```
+
+```python
 import transformers
 import torch
-tokenizer = transformers.LlamaTokenizer.from_pretrained('chaoyi-wu/MedLLaMA_13B')
-model = transformers.LlamaForCausalLM.from_pretrained('chaoyi-wu/MedLLaMA_13B')
+tokenizer = transformers.LlamaTokenizer.from_pretrained('axiong/PMC_LLaMA_13B')
+model = transformers.LlamaForCausalLM.from_pretrained('axiong/PMC_LLaMA_13B')
 ```
+
 ## Introduction:
+
 We continue pre-training LLaMA on 4.8M PubmedCentral papers.
 
 ## Environment:
 Simply set up the required environment as following:
-```
+```bash
 conda install pytorch==1.13.0 torchvision==0.14.0 torchaudio==0.13.0 pytorch-cuda=11.6 -c pytorch -c nvidia
 pip install transformers,sentencepiece,datasets
 ```
@@ -31,7 +38,7 @@ pip install transformers,sentencepiece,datasets
 ## Quick Start:
 Check `simple_test.py` for quickly use PMC-LLaMA or you can follow this folowing simple sample.
 
-```
+```python
 import transformers
 import torch
 tokenizer = transformers.LlamaTokenizer.from_pretrained('chaoyi-wu/PMC_LLAMA_7B')
@@ -71,9 +78,11 @@ More details about how to fine-tune LLaMA can refer to [Finetune_LLAMA](https://
 | LLaMA-13B-Full  | Full fine-tuning   | 45.48/39.36     | 51.42        | 76.4          |
 | MedLLaMA-13B-Full | Full fine-tuning | **48.15/43.52**     | **54.15**        | **77.1**          |
 | LLaMA-7B-PEFT  | PEFT               | 29.38/27.34     | 32.37        | 65.8          |
-| PMC-LLaMA-7B$-PEFT | PEFT             | 30.64/28.52     | 34.33        | 68.2          |
+| PMC-LLaMA-7B-PEFT | PEFT             | 30.64/28.52     | 34.33        | 68.2          |
 | LLaMA-13B-PEFT  | PEFT               | 38.73/38.73     | 39.56        | 65.4          |
 | MedLLaMA-13B-Full | PEFT | **39.12/39.98**     | **41.26**        | **69.4**         |
+| PMC_LLaMA_13B | Zero-shot | **56.36**   | **56.04**  | **77.9**  |
+
 
 Note that, the manual and zero-shot results with * are referred from [LMFLow](https://github.com/OptimalScale/LMFlow/tree/main/src/lmflow).
 
@@ -81,7 +90,8 @@ Note that, the manual and zero-shot results with * are referred from [LMFLow](ht
 <img src="https://github.com/chaoyi-wu/PMC-LLaMA/blob/main/figures/training_curve.png"/>
 
 ## Zero-shot Cases:
-Note that, due to train on the papers, PMC-LLaMA may generate some citation numbers (LLaMA somtimes will do this as well) and we dismiss them in the cases to show the main contents.
+Note that, due to train on the papers, MedLLaMA_13B may generate some citation numbers (LLaMA somtimes will do this as well) and we dismiss them in the cases to show the main contents.
+While for PMC_LLaMA_13B, it's much easier to extract the correct answer as the output result is structured.
 
 <img src="https://github.com/chaoyi-wu/PMC-LLaMA/blob/main/figures/zero-shot_cases.png"/>
 
