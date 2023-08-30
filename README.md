@@ -81,175 +81,19 @@ More details about how to fine-tune LLaMA can refer to [Finetune_LLAMA](https://
 | PMC-LLaMA-7B-PEFT | PEFT             | 30.64/28.52     | 34.33        | 68.2          |
 | LLaMA-13B-PEFT  | PEFT               | 38.73/38.73     | 39.56        | 65.4          |
 | MedLLaMA-13B-Full | PEFT | **39.12/39.98**     | **41.26**        | **69.4**         |
-| PMC_LLaMA_13B | Zero-shot | **56.36**   | **56.04**  | **77.9**  |
-
-<style type="text/css">
-table {
-  border-collapse: collapse;
-  width: 100%;
-}
-
-th {
-  text-align: left;
-  padding: 8px;
-  font-weight:bold;
-}
-
-td {
-  text-align: left;
-  padding: 8px;
-  font-weight:normal;
-}
-
-tr:nth-child(even) {
-  background-color: #f6f8fa;
-}
-</style>
-
-<table>
-
-  <tr>
-  <th>Method</th>
-  <th>Setting</th>
-  <th>USMLE(OOD/ID)</th>
-  <th>MedMCQA(ID)</th>
-  <th>PubMedQA(ID)</th>
-  </tr>
-
-  <tr>
-  <td>Human (pass)</td>
-  <td>Manual*</td>
-  <td>50.0</td>
-  <td>--</td>
-  <td>60.0</td>
-  </tr>
-
-  <tr>
-  <td>Human (expert)</td>
-  <td>Manual*</td>
-  <td>87.0</td>
-  <td>90.0</td>
-  <td>78.0</td>
-  </tr>
-
-  <tr>
-  <td>InstructGPT-175B</td>
-  <td>Zero-shot*</td>
-  <td>46.0</td>
-  <td>44.0</td>
-  <td>73.2</td>
-  </tr>
-
-  <tr>
-  <td>ChatGPT</td>
-  <td>Zero-shot*</td>
-  <td>57.0</td>
-  <td>44.7</td>
-  <td>63.9</td>
-  </tr>
-
-  <tr>
-  <td>LLaMA-7B</td>
-  <td>Zero-shot*</td>
-  <td>27.1</td>
-  <td>24.3</td>
-  <td>5.2</td>
-  </tr>
-
-  <tr>
-  <td>LLaMA-33B</td>
-  <td>Zero-shot*</td>
-  <td>43.4</td>
-  <td>30.3</td>
-  <td>1.8</td>
-  </tr>
-
-  <tr>
-  <td>LLaMA-7B-Full</td>
-  <td>Full fine-tuning	</td>
-  <td>44.55/35.66</td>
-  <td>48.15</td>
-  <td>73.4</td>
-  </tr>
-
-  <tr>
-  <td>PMC-LLaMA-7B-Full</td>
-  <td>Full fine-tuning</td>
-  <td>44.70/40.61</td>
-  <td>50.54</td>
-  <td>69.5</td>
-  </tr>
-
-  <tr>
-  <td>LLaMA-13B-Full</td>
-  <td>Full fine-tuning</td>
-  <td>45.48/39.36</td>
-  <td>51.42</td>
-  <td>76.4</td>
-  </tr>
-
-  <tr>
-  <td>MedLLaMA-13B-Full</td>
-  <td>Full fine-tuning</td>
-  <th>48.15/43.52</th>
-  <th>54.15</th>
-  <th>77.1</th>
-  </tr>
-
-  <tr>
-  <td>LLaMA-7B-PEFT</td>
-  <td>PEFT</td>
-  <td>29.38/27.34</td>
-  <td>32.37</td>
-  <td>65.8</td>
-  </tr>
-
-  <tr>
-  <td>PMC-LLaMA-7B-PEFT</td>
-  <td>PEFT</td>
-  <td>30.64/28.52</td>
-  <td>34.33</td>
-  <td>68.2</td>
-  </tr>
-
-  <tr>
-  <td>LLaMA-13B-PEFT</td>
-  <td>PEFT</td>
-  <td>38.73/38.73</td>
-  <td>39.56</td>
-  <td>65.4</td>
-  </tr>
-
-  <tr>
-  <td>MedLLaMA-13B-Full</td>
-  <td>PEFT</td>
-  <th>39.12/39.98</th>
-  <th>41.26</th>
-  <th>69.4</th>
-  </tr>
-
-  <tr style="background-color:#D6EEEE">
-  <td>PMC_LLaMA_13B</td>
-  <td>Zero-shot</td>
-  <th>56.36</th>
-  <th>56.04</th>
-  <th>77.9</th>
-  </tr>
-
-</table>
-
+| PMC_LLaMA_13B ![](./figures/new.gif) | Zero-shot | **56.36**   | **56.04**  | **77.9**  |
 
 
 Note that, the manual and zero-shot results with * are referred from [LMFLow](https://github.com/OptimalScale/LMFlow/tree/main/src/lmflow).
 
 ## Downstream Training Curve:
-<img src="https://github.com/chaoyi-wu/PMC-LLaMA/blob/main/figures/training_curve.png"/>
+<img src=./figures/training_curve.png/>
 
 ## Zero-shot Cases:
 Note that, due to train on the papers, MedLLaMA_13B may generate some citation numbers (LLaMA somtimes will do this as well) and we dismiss them in the cases to show the main contents.
 While for PMC_LLaMA_13B, it's much easier to extract the correct answer as the output result is structured.
 
-<img src="https://github.com/chaoyi-wu/PMC-LLaMA/blob/main/figures/zero-shot_cases.png"/>
+<img src=./figures/zero-shot_cases.png/>
 
 ## Acknowledge
 Minimal LLaMA -- https://github.com/zphang/minimal-llama
