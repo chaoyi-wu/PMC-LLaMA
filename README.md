@@ -15,6 +15,8 @@ Our model is initialized with LLaMA and then tuned with instructions following d
 We have release a new model **PMC_LLaMA_13B** finetuned on our instruction following dataset.
 It has shown better ability on following user instruction than MedLLaMA_13B.
 
+<img src=./figures/teaser.png width="50%">
+
 Similarly it can be easily loaded with:
 
 ```python
@@ -86,14 +88,16 @@ More details about how to fine-tune LLaMA can refer to [Finetune_LLAMA](https://
 
 Note that, the manual and zero-shot results with * are referred from [LMFLow](https://github.com/OptimalScale/LMFlow/tree/main/src/lmflow).
 
-## Downstream Training Curve:
-<img src=./figures/training_curve.png/>
 
 ## Zero-shot Cases:
+
+We demonstrate PMC_LLaMA_13B's responses with out of domain queries.
+
+<img src=./figures/pmc_llama_cases.png>
+
 Note that, due to train on the papers, MedLLaMA_13B may generate some citation numbers (LLaMA somtimes will do this as well) and we dismiss them in the cases to show the main contents.
 While for PMC_LLaMA_13B, it's much easier to extract the correct answer as the output result is structured.
 
-<img src=./figures/zero-shot_cases.png/>
 
 ## Acknowledge
 Minimal LLaMA -- https://github.com/zphang/minimal-llama
