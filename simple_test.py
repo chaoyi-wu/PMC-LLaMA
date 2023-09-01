@@ -1,7 +1,7 @@
 import transformers
 import torch
-tokenizer = transformers.LlamaTokenizer.from_pretrained('chaoyi-wu/PMC_LLAMA_7B')
-model = transformers.LlamaForCausalLM.from_pretrained('chaoyi-wu/PMC_LLAMA_7B')
+tokenizer = transformers.LlamaTokenizer.from_pretrained('axiong/PMC_LLaMA_13B')
+model = transformers.LlamaForCausalLM.from_pretrained('axiong/PMC_LLaMA_13B')
 sentence = 'Hello, doctor' 
 batch = tokenizer(
             sentence,
