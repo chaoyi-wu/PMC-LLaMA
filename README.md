@@ -27,9 +27,9 @@ Hereby we present PMC_LLaMA's versions and briefs.
 | Version | Link | Brief | Release Date |
 | --- | --- | --- | --- |
 | PMC_LLaMA_13B | https://huggingface.co/axiong/PMC_LLaMA_13B | Instruction Tuned | 2023/09/01 |
-| MedLLaMA_13B | https://huggingface.co/chaoyi-wu/MedLLaMA_13B | Pre-training LLaMA on 4.8M PubmedCentral papers | 2023/04/25 |
-| PMC_LLaMA_7B | https://huggingface.co/chaoyi-wu/PMC_LLAMA_7B | LLaMA-7b finetuned with PMC papers for 5 epochs | 2023/04/25 |
+| MedLLaMA_13B | https://huggingface.co/chaoyi-wu/MedLLaMA_13B | Pre-training LLaMA on 4.8M PubmedCentral papers and Medical Books | 2023/05/01 |
 | PMC_LLaMA_7B_10_epoch | https://huggingface.co/chaoyi-wu/PMC_LLAMA_7B_10_epoch | Similar to PMC_LLaMA_7B but trained 10 epochs | 2023/05/01 |
+| PMC_LLaMA_7B | https://huggingface.co/chaoyi-wu/PMC_LLAMA_7B | LLaMA-7b finetuned with PMC papers for 5 epochs | 2023/04/25 |
 
 
 ## Latest News
