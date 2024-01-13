@@ -127,7 +127,7 @@ And you can find our instruction dataset at [PMC LLaMA Instructions](https://hug
 ## Results
 
 ### QA Benchmark
-| Method              | Model Size          | USMLE(OOD/ID) | MedMCQA(ID) | PubMedQA(ID) |
+| Method              | Model Size          | USMLE | MedMCQA | PubMedQA |
 |---------------------|---------------------|------------------|--------------|------------------|
 | Human (pass)        | -                   | 50.0            | --            | 60.0           |
 | Human (expert)      | -                   | 87.0            | 90.0         | 78.0           |
