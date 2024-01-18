@@ -113,7 +113,8 @@ The script for pretraining locates at `Pretrain/training.sh`.
 
 Our pretraining dataset sources from [S2ORC](https://github.com/allenai/s2orc). Only those papers with PubMed IDs are deemed as medical-related and used during pretraining.
 <!-- The raw training data can be dowloaded from [S2ORC](https://github.com/allenai/s2orc), filter out the papers with PubmedCentral IDs, and you can get the training data we use.  -->
-<!-- We will also release a version of training data soon. -->
+
+The book is listed in this repo as [MedicalBook.xlsx](https://github.com/chaoyi-wu/PMC-LLaMA/blob/main/MedicalBook.xlsx), due to licenses, we cannot release raw content. For reproducing, pls buy and process the books.
 
 More details about how to fine-tune LLaMA can refer to [Finetune_LLAMA](https://github.com/chaoyi-wu/Finetune_LLAMA)
 
