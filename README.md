@@ -20,25 +20,12 @@ The official codes for "PMC-LLaMA: Towards Building Open-source Language Models 
 
 We prove that medical LLM should be first pretrained with domain corpus, and then tuned with instructions following dataset.
 
-Hereby we present PMC_LLaMA's versions and briefs.
-
-[MedLLaMA_13B](https://huggingface.co/chaoyi-wu/MedLLaMA_13B) is pretrained on medical corpus, and [PMC_LLaMA_13B](https://huggingface.co/axiong/PMC_LLaMA_13B) is further finetuned based on that.
-
-| Version | Link | Brief | Release Date |
-| --- | --- | --- | --- |
-| PMC_LLaMA_13B | https://huggingface.co/axiong/PMC_LLaMA_13B | Instruction Tuned | 2023/09/01 |
-| MedLLaMA_13B | https://huggingface.co/chaoyi-wu/MedLLaMA_13B | Pre-training LLaMA on 4.8M PubmedCentral papers and Medical Books | 2023/05/01 |
-| PMC_LLaMA_7B_10_epoch | https://huggingface.co/chaoyi-wu/PMC_LLAMA_7B_10_epoch | Similar to PMC_LLaMA_7B but trained 10 epochs | 2023/05/01 |
-| PMC_LLaMA_7B | https://huggingface.co/chaoyi-wu/PMC_LLAMA_7B | LLaMA-7b finetuned with PMC papers for 5 epochs | 2023/04/25 |
-
-
-## Latest News
-We have release a new model **PMC_LLaMA_13B** finetuned on our instruction following dataset.
-It has shown better ability on following user instruction than MedLLaMA_13B.
+We have released The latest model **PMC_LLaMA_13B** finetuned on our instructions the following dataset.
+It has shown a better ability to follow user instructions than MedLLaMA_13B.
 
 <img src=./figures/teaser.png width="50%">
 
-Similarly it can be easily loaded with:
+Similarly, it can be easily loaded with:
 
 ```python
 import transformers
@@ -46,7 +33,23 @@ import torch
 tokenizer = transformers.LlamaTokenizer.from_pretrained('axiong/PMC_LLaMA_13B')
 model = transformers.LlamaForCausalLM.from_pretrained('axiong/PMC_LLaMA_13B')
 ```
+Hereby we present PMC_LLaMA's versions and briefs.
 
+[MedLLaMA_13B](https://huggingface.co/chaoyi-wu/MedLLaMA_13B) is pretrained on medical corpus, and [PMC_LLaMA_13B](https://huggingface.co/axiong/PMC_LLaMA_13B) is further finetuned based on that.
+
+| Version | Link | Brief | Release Date |
+| --- | --- | --- | --- |
+| MMedLM ![](./figures/new.gif) | https://github.com/MAGIC-AI4Med/MMedLM | Further Pretrained Multilingual LLM | 2023/02/21 |
+| PMC_LLaMA_13B | https://huggingface.co/axiong/PMC_LLaMA_13B | Instruction Tuned | 2023/09/01 |
+| MedLLaMA_13B | https://huggingface.co/chaoyi-wu/MedLLaMA_13B | Pre-training LLaMA on 4.8M PubmedCentral papers and Medical Books | 2023/05/01 |
+| PMC_LLaMA_7B_10_epoch | https://huggingface.co/chaoyi-wu/PMC_LLAMA_7B_10_epoch | Similar to PMC_LLaMA_7B but trained 10 epochs | 2023/05/01 |
+| PMC_LLaMA_7B | https://huggingface.co/chaoyi-wu/PMC_LLAMA_7B | LLaMA-7b finetuned with PMC papers for 5 epochs | 2023/04/25 |
+
+
+## Latest News
+We have released a new multilingual medical LLM **MMedLM**, you can find detailed information in [here](https://github.com/MAGIC-AI4Med/MMedLM). 
+
+It is **better than PMC-LLaMA** even in the English domain while it has not passed instruction tuning, thus is more suitable for fine-tuning instead of zero-shot or few-shot prompting. 
 
 ## Environment
 Simply set up the required environment as following:
