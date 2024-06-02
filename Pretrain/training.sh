@@ -1,4 +1,4 @@
-torchrun --nproc_per_node=8 finetune_pp_peft_trainer_paper_deepspeed.py \
+torchrun --nproc_per_node=8 training.py \
     --model_path /Path/to/LLaMA/Model \
     --Dataset_path ./Data_sample/PMC_OA_papers/Tokenized/\
     --bf16 True \
