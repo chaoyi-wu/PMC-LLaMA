@@ -39,7 +39,8 @@ Hereby we present PMC_LLaMA's versions and briefs.
 
 | Version | Link | Brief | Release Date |
 | --- | --- | --- | --- |
-| MMedLM ![](./figures/new.gif) | https://github.com/MAGIC-AI4Med/MMedLM | Further Pretrained Multilingual LLM | 2024/02/21 |
+|MMed-Llama-3 ![](./figures/new.gif) | https://huggingface.co/Henrychur/MMed-Llama-3-8B | Latest Pretrained Multilingual LLM on Llama-3 | 2024/05/22 |
+| MMedLM  | https://github.com/MAGIC-AI4Med/MMedLM | Further Pretrained Multilingual LLM | 2024/02/21 |
 | PMC_LLaMA_13B | https://huggingface.co/axiong/PMC_LLaMA_13B | Instruction Tuned | 2023/09/01 |
 | MedLLaMA_13B | https://huggingface.co/chaoyi-wu/MedLLaMA_13B | Pre-training LLaMA on 4.8M PubmedCentral papers and Medical Books | 2023/05/01 |
 | PMC_LLaMA_7B_10_epoch | https://huggingface.co/chaoyi-wu/PMC_LLAMA_7B_10_epoch | Similar to PMC_LLaMA_7B but trained 10 epochs | 2023/05/01 |
@@ -47,7 +48,7 @@ Hereby we present PMC_LLaMA's versions and briefs.
 
 
 ## Latest News
-We have released a new multilingual medical LLM **MMedLM**, you can find detailed information in [here](https://github.com/MAGIC-AI4Med/MMedLM). 
+We have released a new multilingual medical LLM **MMed-Llama-3** based on Llama-3, you can find detailed information in [here](https://github.com/MAGIC-AI4Med/MMedLM).  The related instruction tuned version can be found in [MMed-Llama3-8B-EnIns](https://huggingface.co/Henrychur/MMed-Llama-3-8B-EnIns). Notably here, we simply adopt a reative small SFT data which is the same as introduced in our PMC-LLaMA paper and, thus, the instruction data may not be comprehensive enough for some out-of-domain clinical tasks.
 
 It is **better than PMC-LLaMA** even in the English domain while it has not passed instruction tuning, thus is more suitable for fine-tuning instead of zero-shot or few-shot prompting. 
 
