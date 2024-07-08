@@ -48,9 +48,7 @@ Hereby we present PMC_LLaMA's versions and briefs.
 
 
 ## Latest News
-We have released a new multilingual medical LLM **MMed-Llama-3** based on Llama-3, you can find detailed information in [here](https://github.com/MAGIC-AI4Med/MMedLM).  The related instruction tuned version can be found in [MMed-Llama3-8B-EnIns](https://huggingface.co/Henrychur/MMed-Llama-3-8B-EnIns). Notably here, we simply adopt a reative small SFT data which is the same as introduced in our PMC-LLaMA paper and, thus, the instruction data may not be comprehensive enough for some out-of-domain clinical tasks.
-
-It is **better than PMC-LLaMA** even in the English domain while it has not passed instruction tuning, thus is more suitable for fine-tuning instead of zero-shot or few-shot prompting. 
+We have released a new report genration metrics [RaTEScore](https://arxiv.org/abs/2406.16845). We strongly believe to promote the develop a generative-based medical foundation models, developing a robust and reliable metric is a critical and foundation step. 
 
 ## Environment
 Simply set up the required environment as following:
